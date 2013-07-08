@@ -1,0 +1,6 @@
+name = Create Content Types
+description = Module to create content types in code
+dependencies[] = forum
+dependencies[] = views
+package = My Custom Modules
+core = 7.x

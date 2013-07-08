@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * @file create_content_types.module
+ * TODO: Enter file description here.
+ */
+
+
+/**
+ * Implements hook_help().
+ */
+function create_content_types_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#create_content_types':
+      return t("No help here");
+    // OPTIONAL: Add additional cases for other paths that should display help text.
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function create_content_types_menu() { 
+  // This is the minimum information you can provide for a menu item.
+  $items['create_content_types'] = array(
+    'title' => 'TODO: Enter menu item title',
+    'page callback' => 'TODO: Enter callback function',
+    'access arguments' => array('TODO: Enter user permissions'),
+  );
+  // This is a menu item for a form.
+  $items['create_content_types/admin'] = array(
+    'title' => 'TODO: Enter menu item title',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('create_content_types_form'),
+    'access arguments' => array('TODO: Enter user permissions'),
+  );
+  // More complex menu item.
+  $items['create_content_types/foo'] = array(
+    'title' => 'TODO: Enter menu item title',
+    'description' => 'TODO: Enter description',
+    'page callback' => 'TODO: Enter callback function',
+    'page arguments' => array(), // An array of arguments to pass to the page callback function. Integer values pass the corresponding URL component.
+    'access callback' => '', // defaults to user_access()
+    'access arguments' => array('TODO: Enter user permissions'),
+    'weight' => 0,
+    'type' => MENU_NORMAL_ITEM, // One of MENU_NORMAL_ITEM / MENU_CALLBACK / MENU_SUGGESTED_ITEM / MENU_LOCAL_TASK / MENU_DEFAULT_LOCAL_TASK
+    'file' => 'create_content_types.admin.inc',
+    'menu_name' => '', // Menu to place this item in.
+    'title callback' => '', // Function to generate the title, defaults to t(). 
+    'title arguments' => array(), // Arguments to send to t() or your custom callback. 
+  );
+  // OPTIONAL: Fill in additional menu items
+
+  return $items;
+}
+
+/**
+ * Implements hook_cron().
+ */
+function create_content_types_cron() {
+  // Short-running operation example, not using a queue:
+  // Delete all expired records since the last cron run.
+  $expires = variable_get('mymodule_cron_last_run', REQUEST_TIME);
+  db_delete('mymodule_table')
+    ->condition('expires', $expires, '>=')
+    ->execute();
+  variable_set('mymodule_cron_last_run', REQUEST_TIME);
+
+  // Long-running operation example, leveraging a queue:
+  // Fetch feeds from other sites.
+  $result = db_query('SELECT * FROM {aggregator_feed} WHERE checked + refresh < :time AND refresh <> :never', array(
+    ':time' => REQUEST_TIME,
+    ':never' => AGGREGATOR_CLEAR_NEVER,
+  ));
+  $queue = DrupalQueue::get('aggregator_feeds');
+  foreach ($result as $feed) {
+    $queue->createItem($feed);
+  }
+}
+
+
+/**
+ * Implements hook_install().
+ */
+
+

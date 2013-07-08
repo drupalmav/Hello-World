@@ -1,0 +1,436 @@
+#main {
+  width: 1280px;
+  margin: auto;
+  padding-top: 0em !important;
+  border: 1px;
+}
+
+#content {
+  margin: 5px;
+}
+
+
+/*
+.css_PanelCanvas {
+  width: 1280px; 
+  margin: auto;
+ 
+}
+*/
+
+.active-trail.active {
+  border-bottom: 5px solid;
+}
+
+
+/************ (Start) Homepage Button ****************/
+
+body {
+  background: url("images/body-border.gif") repeat-y scroll center center #FAFAFA !important;
+}
+
+
+.css_button_seemywork { /*Position of the button */
+  top: 33%;
+  position: absolute;
+  left: 150px;
+}
+
+.css_customTitle { /* Positing and theming the site title  */
+  position: absolute;
+  top: 15%;
+  left: 50px;
+  width: 100%;
+}
+
+.siteSlogan {
+  color: #000000;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.4em;
+  text-shadow: 0 1px 2px #000000;
+  width: 60%;
+}
+
+
+.siteTitle { /* Theming the site title text */
+  color: black;
+  font-family: 'atrament-web',Helvetica,Arial,Verdana,sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1.1em;
+  text-shadow: 0 1px 4px #000000;
+  text-transform: uppercase;
+}
+
+
+
+/* Theming button on Homepage */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #FF681F;
+  background-image: -moz-linear-gradient(center bottom , #FF602B 1%, #FF9443 100%);
+  border: medium none;
+  border-radius: 2.8em 2.8em 2.8em 2.8em;
+  box-shadow: 0 1px 0 #FFD265 inset, 0 0 0 1px #912E01, 0 0 0 7px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  overflow: visible;
+  padding: 0.3em 1.4em;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #912E01;
+  text-transform: uppercase;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"]:hover {
+  background-color: #FF831E;
+  background-image: -moz-linear-gradient(center bottom, #FF9443 1%, #FF602B 100%);
+}
+
+
+/*****************************************************/
+
+/************ (Start) ABOUT ME Page ******************/
+
+
+.submitted {
+  display: none;
+}
+
+
+
+
+
+/*****************************************************/
+
+/************ (Start) CONTACT PAGE *******************/
+
+a.follow-link {
+  height: 80px !important;
+  padding-left: 55px !important;
+}
+
+.form-text.required {
+        outline: none !important;
+	padding: 10px !important;
+	width: 220px !important;
+	font-family: Helvetica, Arial, "Sans Serif" !important;
+	font-size: 13px !important;
+	color: #333 !important;
+	border: 1px solid #ddd !important;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+	-webkit-box-shadow: inset 0px 0px 10px 0px #eee !important;
+	-moz-box-shadow: inset 0px 0px 10px 0px #eee !important;
+	box-shadow: inset 0px 0px 10px 0px #eee !important;
+}
+
+.form-text.required:hover {
+	border-color: #999;
+	-webkit-box-shadow: inset 0px 0px 10px 0px #ddd;
+	-moz-box-shadow: inset 0px 0px 10px 0px #ddd;
+	box-shadow: inset 0px 0px 10px 0px #ddd;
+}
+
+
+label {
+  width: 30%;
+  float: left;
+}
+
+textarea {
+  width: 50% !important;
+
+        outline: none !important;
+        padding: 10px !important;
+/*        width: 220px !important; */
+        font-family: Helvetica, Arial, "Sans Serif" !important;
+        font-size: 13px !important;
+        color: #333 !important;
+        border: 1px solid #ddd !important;
+        -webkit-border-radius: 3px !important;
+        -moz-border-radius: 3px !important;
+        border-radius: 3px !important; 
+        -webkit-box-shadow: inset 0px 0px 10px 0px #eee !important;
+        -moz-box-shadow: inset 0px 0px 10px 0px #eee !important;
+        box-shadow: inset 0px 0px 10px 0px #eee !important;
+
+}
+
+.grippie {
+  display: none;
+}
+
+.form-item.form-type-textarea.form-item-message > label { 
+  padding-top: 50px; /*Vertically centering the 'Message' Label */
+}
+
+/************ (End) Styling Follow us Block *********/
+
+
+
+
+
+
+
+
+
+#header {
+/*
+  margin: auto;  
+  height: 400px;
+
+  width: 100%;
+  margin: auto !important;
+
+  background-image: url(images/bg-homepage_v1.jpg);
+  background-size: cover;
+    background-repeat: no-repeat;
+*/
+
+}
+
+.panels-flexible-row-css_canvas_homepage-1 {
+  margin: auto;
+  height: 400px;
+
+  width: 100%;
+  margin: auto !important;
+
+  background-image: url(images/bg-homepage_v1.jpg);
+  background-size: cover;
+    background-repeat: no-repeat;
+
+} 
+
+#content { /* Overwriting content from responsive-sidebars.css  */
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
+.views-content-field-snapshots > img {
+	cursor: pointer;	
+}
+
+/*Centering the homepage views of grid links */
+.view-grids-for-site-section-links {
+/*  margin-left: 8%;
+*/
+}
+
+.css_canvas_homepage {
+  /*
+  position: relative;
+  top: -250px !important;
+  */
+}
+
+/*
+#site-name a:link, #site-name a:visited {
+  color: white;}
+}
+*/
+#css_SiteName {
+  color: white !important;
+}
+
+
+
+
+/************** (Start) PRIMARY LINKS THEMING ***********/
+
+
+ul li.leaf {
+  list-style-image: none !important;
+  list-style-type: none !important;
+}
+
+dl, menu, ol, ul, .item-list ul {
+  margin: none !important;
+}
+
+menu, ol, ul, .item-list ul {
+  padding 0px !important;
+}
+
+.menu {
+  padding-left: 20%;
+}
+
+.menu a {
+/*color: white;*/
+  font-size: 20px;
+  text-transform: uppercase !important;
+  list-style: none;
+
+  font-family: 'atrament-web',Helvetica,Arial,Verdana,sans-serif;
+
+}
+
+.leaf > a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.leaf {
+  width: 18%;
+  float: left;
+}
+
+.menu a {
+  color: #000000;
+  float: left;
+  font-size: 25px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  text-align: center;
+  width: 85%;
+}
+
+
+.menu a:hover {
+  border-bottom: 5px solid #FF681F;
+}
+
+
+/************** (End) PRIMARY LINKS THEMING ***********/
+
+
+
+
+
+
+
+
+/************** (START) GRIDS HOMEPAGE DISPLAY ***********/
+
+.table_field {
+  border: 1px solid;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  text-align: center;
+}
+
+
+.table_field:hover {
+  cursor: pointer;
+  border-color: #FF681F;
+/*  border-color: #2E9DF7;*/
+}
+
+
+.table_field {
+  border: 1px solid;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  width: 350px;
+  height: 325px;
+  -moz-box-sizing: border-box;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  color: #333232;
+  display: block;
+  padding: 15px 22px;
+  display: block;
+  transition: border 0.1s linear 0s;
+}
+
+
+
+.table_field > a { /*Theming title in the grid box */
+  font: 600 18px/28px "Proxima-Nova-n6","Proxima-Nova-1","Proxima-Nova-2","Proxima Nova",sans-serif;
+  color: black;
+  display: block;
+  height: auto;
+  -moz-box-sizing: border-box;
+}
+
+
+
+.table_field > p { /*Theming description in the grid box */
+  font: 16px/23px "Proxima-Nova-n3","Proxima-Nova-1","Proxima-Nova-2","Proxima Nova",sans-serif;
+}
+
+/************** (START) GRIDS HOMEPAGE DISPLAY ***********/
+
+.panels-flexible-region-5-primary_links {
+  float: none !important; /*So that 'About Me' does not float in separate line */
+  width: 100%;
+}
+
+/************ (Start) Footer *****************************/
+
+.css_footer {
+  background-color: #2F2F2F;
+  background-position: center top;
+  background-repeat: repeat;
+  color: #A0A0A0;
+  float: left;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+li.socialweb {
+  display: inline;
+  float: left;
+  width: 100px;
+}
+
+.footer li {
+  background-color: transparent;
+  background-image: url("images/arrow2.png");
+  background-position: 0 8px;
+  background-repeat: no-repeat;
+  list-style: none outside none;
+  padding: 0 13px;
+}
+
+a#twitter {
+  background: url("images/black-twitter.png") repeat scroll 0 0 transparent;
+  display: block;
+  height: 90px;
+  text-indent: -9999px;
+  width: 90px;
+}
+
+a#twitter:hover {
+  background: url("images/twitter-2.png") repeat scroll 0 0 transparent;
+}
+
+a#facebook {
+  background: url("images/black-facebook.png") repeat scroll 0 0 transparent;
+  display: block;
+  height: 90px;
+  text-indent: -9999px;
+  width: 90px;
+}
+
+a#facebook:hover {
+  background: url("images/facebook.png") repeat scroll 0 0 transparent;
+}
+
+a#gplus {
+  background: url("images/black-googleplus.png") repeat scroll 0 0 transparent;
+  display: block;
+  height: 90px;
+  text-indent: -9999px;
+  width: 90px;
+}
+
+a#gplus:hover {
+  background: url("images/googleplus-2.png") repeat scroll 0 0 transparent;
+
+}
+
+.css_contactblock {
+  padding-top: 100px;
+  float: right;
+}
+
+
+/*********************************************************/
+
